@@ -6,6 +6,8 @@
 //  Copyright © 2016 Edgar Chacon. All rights reserved.
 //
 
+// New test comment
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -20,7 +22,7 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         print(tapCount)
         
-        if tapCount >= 10 {
+        if tapCount >= 5 {
             titleLabel.text = "I been HIT... \(tapCount) times"
         }
         
