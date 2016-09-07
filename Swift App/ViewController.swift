@@ -15,16 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mainButton: UIButton!
     
-    var tapCount = 0
+    @IBOutlet weak var fieldOne: UITextField!
+    @IBOutlet weak var fieldTwo: UITextField!
+    
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
-        tapCount = tapCount + 1
-        print(tapCount)
+        print(fieldOne.text)
+        print(fieldTwo.text)
         
-        if tapCount >= 5 {
-            titleLabel.text = "I been HIT... \(tapCount) times"
-        }
+        titleLabel.text = "Answer: \(Int(fieldOne.text!)! + Int(fieldTwo.text!)!)"
         
     }
     
